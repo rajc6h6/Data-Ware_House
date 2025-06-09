@@ -65,7 +65,7 @@ CREATE TABLE silver.order_items (
 );
 GO
 
--- Optional: Enforce uniqueness on order_id + product_id combination in order_items
+--Enforce uniqueness on order_id + product_id combination in order_items
 ALTER TABLE silver.order_items
 ADD CONSTRAINT UQ_order_product UNIQUE (order_id, product_id);
 GO
